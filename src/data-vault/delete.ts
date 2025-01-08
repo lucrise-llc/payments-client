@@ -1,5 +1,5 @@
 export type DeleteDataVault = {
-  dataVaultToken: string;
+  token: string;
 };
 
 type DeleteDataVaultResponse = {
@@ -13,7 +13,7 @@ export async function deleteDataVault({
   data: DeleteDataVault;
   url: string;
 }): Promise<DeleteDataVaultResponse> {
-  const response = await fetch(`${url}/data-vaults/${data.dataVaultToken}`, {
+  const response = await fetch(`${url}/data-vaults/${data.token}`, {
     method: "DELETE",
   });
 
