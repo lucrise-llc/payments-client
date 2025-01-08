@@ -31,7 +31,7 @@ export async function processPayment({
   url: string;
 }): Promise<ProcessPaymentResponse> {
   const response = await fetch(
-    `${url}/payment_intents/${data.paymentIntentId}/process`,
+    `${url}/payments/process/${data.paymentIntentId}`,
     {
       method: "POST",
       headers: {
