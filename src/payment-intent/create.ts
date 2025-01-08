@@ -18,7 +18,7 @@ export async function createPaymentIntent({
   data: CreatePaymentIntent;
   url: string;
 }): Promise<CreatePaymentIntentResponse> {
-  const response = await fetch(`${url}/payment_intents`, {
+  const response = await fetch(`${url}/payments/intents`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
