@@ -1,10 +1,9 @@
 export type CreatePaymentIntent = {
     amount: number;
-    reference: string;
-    email: string;
     successURL: string;
     failureURL: string;
     webhookURL: string;
+    metadata: string | null;
 };
 type CreatePaymentIntentResponse = {
     paymentIntentId: string;
