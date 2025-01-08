@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../src/payment-intent/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAkB,cAAc,EAAE,MAAM,WAAW,CAAC;AAC3D,OAAO,EAAuB,mBAAmB,EAAE,MAAM,UAAU,CAAC;AAEpE,qBAAa,aAAa;IACxB,SAAgB,GAAG,EAAE,MAAM,CAAC;gBAEhB,GAAG,EAAE,MAAM;IAIjB,OAAO,CAAC,IAAI,EAAE,cAAc;;;;;;;IAI5B,MAAM,CAAC,IAAI,EAAE,mBAAmB;;;CAGvC"}

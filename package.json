@@ -6,15 +6,14 @@
   "type": "module",
   "scripts": {
     "test": "NODE_TEST_VERBOSE=1 node --import tsx --test **/*test.ts",
-    "build": "esbuild src/index.ts --bundle --sourcemap --platform=node --format=esm --packages=external --loader:.node=file --outfile=dist/index.js"
+    "build": "rm -rf dist && tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tsx": "^4.19.2",
-    "esbuild": "0.23.1",
     "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }
