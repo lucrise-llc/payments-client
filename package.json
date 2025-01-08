@@ -2,15 +2,18 @@
   "name": "payments-client",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.ts",
+  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "test": "NODE_TEST_VERBOSE=1 node --import tsx --test **/*test.ts"
+    "test": "NODE_TEST_VERBOSE=1 node --import tsx --test **/*test.ts",
+    "build": "esbuild src/index.ts --bundle --sourcemap --platform=node --format=esm --packages=external --loader:.node=file --outfile=dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tsx": "^4.19.2",
+    "esbuild": "0.23.1",
     "@types/node": "^22.10.2",
     "typescript": "^5.7.2"
   }
