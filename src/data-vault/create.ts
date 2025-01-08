@@ -1,7 +1,6 @@
 export type CreateDataVault = {
   groupId: string;
   name: string;
-  brand: string;
   cardNumber: string;
   expiration: string;
   cvc: string;
@@ -18,7 +17,7 @@ export async function createDataVault({
   data: CreateDataVault;
   url: string;
 }): Promise<CreateDataVaultResponse> {
-  const response = await fetch(`${url}/data_vault`, {
+  const response = await fetch(`${url}/data-vaults`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

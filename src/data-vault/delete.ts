@@ -13,7 +13,7 @@ export async function deleteDataVault({
   data: DeleteDataVault;
   url: string;
 }): Promise<DeleteDataVaultResponse> {
-  const response = await fetch(`${url}/data_vault/${data.dataVaultToken}`, {
+  const response = await fetch(`${url}/data-vaults/${data.dataVaultToken}`, {
     method: "DELETE",
   });
 
