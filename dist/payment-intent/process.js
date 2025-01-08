@@ -1,5 +1,5 @@
 export async function processPayment({ data, url, }) {
-    const response = await fetch(`${url}/payments/process/${data.paymentIntentId}`, {
+    const response = await fetch(`${url}/payments/process/`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

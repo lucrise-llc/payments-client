@@ -30,16 +30,13 @@ export async function processPayment({
   data: ProcessPayment;
   url: string;
 }): Promise<ProcessPaymentResponse> {
-  const response = await fetch(
-    `${url}/payments/process/${data.paymentIntentId}`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data.details),
-    }
-  );
+  const response = await fetch(`${url}/payments/process/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data.details),
+  });
 
   if (!response.ok) {
     throw new Error("Failed to process payment");
